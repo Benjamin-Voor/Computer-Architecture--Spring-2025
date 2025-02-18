@@ -8,8 +8,8 @@ void task_2_print(const int INT_SIZE, int i, int j, int* matrix, size_t row_size
     printf("Address of matrix:");
     printf("\t%d\n", matrix);
 
-    printf("*(matrix+i)+j:");
-    printf("\t\t%d\n", matrix+i*row_size+j);
+    printf("matrix+i*row_size+j:");
+    printf("\t%d\n", matrix+i*row_size+j);
 
     printf("Difference of");
     printf("\t\t%d\n", i*INT_SIZE* //Break mid-line for emphasis

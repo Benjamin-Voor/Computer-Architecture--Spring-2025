@@ -4,8 +4,8 @@
 
 void task_1_print(const int INT_SIZE, int* arr, int i, int target_addr) {
 
-    printf("arr = %d\n", arr);
-    printf("&arr[%d] = %d\n", i, &arr[i]);
+    printf("arr = \t\t\t%d\n", arr);
+    printf("&arr[%d] = \t\t%d\n", i, &arr[i]);
     printf("Difference of %d\n\n", i*INT_SIZE);
 }
 
