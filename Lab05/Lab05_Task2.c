@@ -1,15 +1,15 @@
+#include "Lab05_Task2.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "Lab05_Task2.h"
 
 void task_2_print(const int INT_SIZE, int i, int j, int* matrix, size_t row_size)
 {
-    printf("Enter print func\n");
+    printf("Beginning print helper...\n");
     printf("Address of matrix:");
     printf("\t%d\n", matrix);
 
     printf("*(matrix+i)+j:");
-    printf("\t\t%d\n", matrix+i*j+j);
+    printf("\t\t%d\n", matrix+i*row_size+j);
 
     printf("Difference of");
     printf("\t\t%d\n", i*INT_SIZE* //Break mid-line for emphasis
@@ -66,7 +66,7 @@ void task_2_just_for_fun(const int INT_SIZE) {
     }
 }
 
-/*
+/* This breaks the linker if not commented out
 int main()
 {
     const int INT_SIZE = sizeof(int);

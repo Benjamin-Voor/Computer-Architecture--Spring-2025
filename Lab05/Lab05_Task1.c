@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "Lab05_Task1.h"
+#include <stdlib.h>
 #define ARR_SIZE_TASK_1 5
 
 void task_1_print(const int INT_SIZE, int* arr, int i, int target_addr) {
@@ -45,3 +45,12 @@ void task_1_just_for_fun(const int INT_SIZE) {
         printf("\tAnd in manual math yields %d\n", *(a+(i*INT_SIZE)));
     }
 }
+
+/* This breaks the linker if not commented out
+int main()
+{
+    const int INT_SIZE = sizeof(int);
+    task_1(INT_SIZE);
+    return 0;
+}
+*/
