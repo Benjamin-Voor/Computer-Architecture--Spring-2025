@@ -4,7 +4,7 @@
 
 void task_2_print(const int INT_SIZE, int i, int j, int* matrix, size_t row_size)
 {
-    printf("Beginning print helper...\n");
+    // printf("Beginning print helper...\n"); //for debugging purposes only
     printf("Address of matrix:");
     printf("\t%d\n", matrix);
 
