@@ -29,6 +29,6 @@ int main() {
     const int DOUBLE_SIZE = sizeof(double);
     print_bold("\nTask 4: Structure with Mixed Field Sizes and Alignment Impact\n", bold_color, reset_color);
     task_4(INT_SIZE, CHAR_SIZE, SHORT_SIZE, DOUBLE_SIZE);
-
+    
     return 0;
 }
